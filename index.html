@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet"  href="style.css">
+    <script src="https://kit.fontawesome.com/f43ea30f5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images1/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Creator of Digital Worlds</p>
+                <h1>Hi , I'm <span>Sai Sankar</span> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------About section------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic11.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a highly motivated student, I am actively seeking a challenging role that will provide me with the 
+                        opportunity to further enhance my skills. I am eager to find an opportunity that not only allows me to
+                         apply my technical knowledge but also offers an opportunity for continuous improvement and 
+                         growth...As a recent graduate, I am determined to improve and grow as a professional with a dynamic and 
+                         innovative team. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PROGRAMMING</span><br>C,C++,Java,Python(Intermediate)</li>
+                            <li><span>WEB DEVELOPMENT</span><br>HTML & CSS,React</li>
+                            <li><span>TECHNOLOGIES</span><br>MySQL,UX/UI using AbobeXD</li>
+                            <li><span>OTHER...</span><br>Debugging,DSA using CPP,Design & Analysis of Algorithm<br>
+                                Banner Designing and Photo Editing using Adobe Photoshop</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><b>Present</b><br>Smart Interviews-Student Mentor</span><br>Key responsibilities:<br>
+                                1. Guiding and assisting juniors in mastering Data Structures and Algorithms.<br>
+                                2. Clarifying doubts, identifying code errors, and providing debugging guidance </li>
+                            <li><span>Robotic Process Automation</span><br>Gained some basic knowledge on Process Automation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BACHLOR DEGREE OF INFORMATION TECHNOLOGY</span><br>Prasad V Potluri Siddhartha Institute Of Technology<br>Kanuru,Vijayawada<br>CGPA:8.99<br>Batch:2020-2024</li>
+                            <li><span>INTERMEDIATE TECHNOLOGY</span><br>Sarada Educational Institutions<br>Mogalrajpuram,Vijayawada <br>CGPA:9.75 <br>Batch:2018-2020</li>
+                            <li><span>SECONDARY EDUCATION</span><br>S.T.B.E.M.High School <br>Onetown,Vijayawada <br>CGPA:8.3 <br>Batch:2018</li>
+                        </ul>
+                    </div>                                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>DSA Course</h2>
+                    <p>I offer professional assistance in Data Structures and Algorithms (DSA) using C++. I can help you understand DSA concepts, solve related problems, and excel in your programming journey</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-code-compare"></i>
+                    <h2>Debugging</h2>
+                    <p>I offer professional C and C++ code debugging and error fixing services. I use diverse methods to solve problems and provide customized solutions to enhance code functionality and performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Dezine the Website based on your requirement and can deliver a working HTML & CSS Website</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------Projects----------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images1/work_main-1.png">
+                    <div class="layer">
+                        <h3>Car Sentry - A Owner Assistant</h3>
+                        <p>This IoT project features a device that detects human presence near a car, 
+                            captures video footage, and sends it via email for remote monitoring and 
+                            security. Also applied for patents to protect this innovative solution.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images1/work-2.png">
+                    <div class="layer">
+                        <h3>Collage Website</h3>
+                        <p>A collage website using HTML & CSS ,where navigation between 
+                            pages is facilitated through the use of frames</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                    
+                </div>
+                <div class="work">
+                    <img src="images1/work-3.png">
+                    <div class="layer">
+                        <h3>Adventure Explorer</h3>
+                        <p>A visually appealing frontend React website that displays a 
+                            variety of products, services, and igniting your sense of adventure
+                             for your next journey.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>                
+                </div>                                
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+<!-- ------------publications------------ -->
+<div id="publications">
+    <div class="container">
+      <h1 class="sub-title">Publications</h1>
+      <div class="publication-list">
+        <div class="publication-work">
+          <img src="images1/publication_image.png" alt="Publication">
+          <div class="publication-overlay">
+            <div class="publication-content">
+              <h3>Human Activity Classification based on Smartphone Data</h3>
+              <p>International Journal For Innovative Engineering and Management Research</p>
+              <p>The publication mainly focuses on recognizing the fundamental human activities such as running, standing, and walking using Supervised Machine Learning techniques.</p>
+              <a href="https://www.ijiemr.org/public/uploads/paper/511511675672961.pdf" target="_blank"><i class="fas fa-external-link-alt"></i> Read Publication</a>
+            </div>
+          </div>
+        </div>
+        <div class="publication-work">
+            <!-- made empty so that one which is displayed will be in a proper size while displayed -->
+          </div>
+          <div class="publication-work">
+            <!-- made empty so that one which is displayed will be in a proper size while displayed -->
+          </div>
+        <!-- Add more publication cards here -->
+      </div>
+      <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+  </div>
+
+  <!-- -----------Certificates----------- -->
+<div id="certificates">
+    <div class="container">
+      <h1 class="sub-title">Certificates</h1>
+      <div class="certificate-list">
+        <div class="certificate">
+          <img src="images1/certificate1.png">
+          <div class="layer">
+            <h3>Advanced Data Structures and Algorithms</h3>
+            <p>This course focuses on simplifying complex coding problems 
+                and helps participants develop problem-solving skills. 
+                The course also teaches techniques for writing high-performance algorithms</p>
+            <a href="https://smartinterviews.in/login" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="certificate">
+          <img src="images1/certificate3.png">
+          <div class="layer">
+            <h3>Programming in Java</h3>
+            <p>I completed an NPTEL Swayam Java course that provided valuable knowledge 
+                and skills in Java programming, including important concepts and practical applications.</p>
+            <a href="https://onlinecourses.nptel.ac.in/noc22_cs102/course" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="certificate">
+          <img src="images1/certificate2.png">
+          <div class="layer">
+            <h3>Data Base Management System</h3>
+            <p>I successfully completed an NPTEL Swayam course on Database Management 
+                System (DBMS), acquiring valuable skills and expertise in effectively 
+                managing databases.</p>
+            <a href="https://onlinecourses.nptel.ac.in/noc22_cs91/course" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+  
+    <!-- ----------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sankarsai2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7095210823</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sai.sankar.sigatapu/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/s_sai_sankar/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sigatapu-sai-sankar-04655521a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright S.Sai Sankar. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvi1DxVONJhklnzvzKwdtJRRxdHaXn6NRf7avTeEQHRxdBqAR4D23HIrb5ZqZLwzum/exec'
+    const form = document.forms['submit-to-google-sheet']
+    
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            // the message will be removed after 5 sec
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
